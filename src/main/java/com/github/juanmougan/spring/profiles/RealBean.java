@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 @Component
-@Profile("default")
+@Profile("default")     // Without this, "main" would run, but "test" wouldn't
 public class RealBean implements Bean {
     @Override
     public String sayMyName() {

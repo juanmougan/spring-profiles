@@ -1,6 +1,5 @@
 package com.github.juanmougan.spring.profiles;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +14,12 @@ import static org.junit.Assert.assertEquals;
 @ActiveProfiles(profiles = "test")
 public class ProfilesApplicationTests {
 
-	@Autowired
-	private Bean bean;
+    @Autowired
+    private Bean bean;
 
-	@Test
-	public void testCorrectBean() {
-		assertEquals("I'm just a test bean :(", bean.sayMyName());
-	}
+    @Test
+    public void testCorrectBean() {
+        assertEquals("I'm just a test bean :(", bean.sayMyName());
+    }
 
 }
